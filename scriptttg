@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("DariusScripts", "DarkTheme")
+
+local main = Window:NewTab("blypy")
+local mainSection = main:NewSection("oBlippi's Playground 🦖")
+
+  
+mainSection:NewButton("Touch", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/BlippisPlayground.lua"))()
+)
+end)
